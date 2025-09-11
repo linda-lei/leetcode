@@ -3,11 +3,11 @@ function isPalindrome(s) {
     let left = 0, right = s.length - 1;
 
     while (left < right) {
-        while (left < right && !/[a-zA-Z0-9]/.test(s[left])) {
+        while (left < right && !/[a-zA-Z0-9]/.test(s[left])) {  // isAlphaNum check
             left++;
         }
         
-        while (left < right && !/[a-zA-Z0-9]/.test(s[right])) {
+        while (left < right && !/[a-zA-Z0-9]/.test(s[right])) { // isAlphaNum check
             right--;
         }
 
